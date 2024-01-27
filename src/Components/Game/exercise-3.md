@@ -12,15 +12,18 @@ Deberás programar todas las condiciones partiendo de los **dos arrays que te de
 
 ##Condiciones
 
-1. Selecciona aleatoriamente una persona del array. Esta es la persona que deberá adivinar el usuario en base a las
+1. * Selecciona aleatoriamente una persona del array. Esta es la persona que deberá adivinar el usuario en base a las
    preguntas que haga al juego.
-2. Crea un tablero de juego en el que recorras todas las personas y pinta un `<img>` por cada una de ellas con
+
+2. * Crea un tablero de juego en el que recorras todas las personas y pinta un `<img>` por cada una de ellas con
    la imagen que cada persona tiene en la propiedad `.img` dentro
    del `<div data-function="boardGame">`
-3. Crea un tablero de preguntas con el array de `questionsType` que tendrás al final del README. Por cada uno de
+
+3. * Crea un tablero de preguntas con el array de `questionsType` que tendrás al final del README. Por cada uno de
    los objetos de este array deberás pintar un `<h2>` con el valor de la propiedad `.title` y tantos botones como
    strings tenga el array de la propiedad `.questions`. Como consejo, podrás usar la propiedad `.key` para
    posteriormente comparar las respuestas con la persona seleccionada por el juego aleatoriamente.
+   
 4. Crea un evento `click` en los botones para comprobar si la persona seleccionada aleatoriamente por el juego
    coincide con la opción seleccionada por el usuario. Recorre el array de personas y deshabilita aquellas que no
    coincidan afirmativamente con la comparación. Ej: Si el usuario selecciona la opción `Yes` de la pregunta ``Glasses tendremos que comprobar que el usuario seleccionado aleatoriamente por el juego tiene gafas...en caso de que las tenga. Deshabilitamos todos las personas que no tengan gafas y, en caso de que no la tenga, lo contrario. Para deshabilitar te recomendamos que añadas el estilo `pointers-events: 'none'`y`opacity: '0.2'`. Deshabilita también el botón al que el usuario ha hecho click con las mismas propiedades para que no pueda volver a darle. Finalmente, suma 1 al contador de pistas que estará en el `<span data-function="clueCount""`.

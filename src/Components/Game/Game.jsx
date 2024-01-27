@@ -10,12 +10,19 @@ const Game = () => {
 const [personsb,setPersons] = useState(persons) 
 const [questions,setQuestions] = useState(questionsType) 
 
+//seleccionar persona aleatoria al iniciar el programa
+const randomIndex = Math.floor(Math.random() * personsb.length);
+const randomPerson = personsb[randomIndex];
+
+
+
+
 
   return (
   
     <>
       <Gallery persons={personsb}  />  
-      <Questions questions={questions} />
+      <Questions questions={questions} persons={personsb} setPersons={setPersons} randomPer={randomPerson}/>
     </>
   )
 }
