@@ -39,3 +39,8 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
+
+.disabled {
+    opacity: .2;
+    pointer-events: none;
+}

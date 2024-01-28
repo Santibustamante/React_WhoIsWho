@@ -7,7 +7,7 @@
         <div className="b-board-game">
         
          {persons.map((per,i)=>(
-            <img src={per.img} key={i} alt=''></img>
+            <img src={per.img} key={i} alt='' className={per.isDisabled && 'disabled'}></img>
          ))}   
         </div>
       )
