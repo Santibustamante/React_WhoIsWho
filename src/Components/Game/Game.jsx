@@ -14,6 +14,7 @@ const Game = () => {
   const [questions,setQuestions] = useState(questionsType) 
   const [randomPerson, setRandomPerson] = useState()
   const [numPistas, setNumPistas] = useState(0);
+ 
 
   //seleccionar una persona aleatoria al inicio del programa
   //hacer que randomPerson se le asigne valor solo 1 vez
@@ -29,7 +30,7 @@ const Game = () => {
   
     <>
       <Contador numPistas={numPistas}/>
-      <Gallery persons={personsb}  />  
+      <Gallery persons={personsb} randomPerson={randomPerson}  />  
       <Questions questions={questions} persons={personsb} setPersons={setPersons} randomPer={randomPerson} numPistas={numPistas} setNumPistas={setNumPistas}/>
     </>
   )
